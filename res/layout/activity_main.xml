@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp" 
+    android:background="@drawable/background">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="@string/name_text_hint"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/name"
+        android:ems="10"
+        android:hint="@string/amount_text_hint"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/details_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/viewlist"
+        android:layout_alignRight="@+id/viewlist"
+        android:hint="@string/details_text_hint"
+        android:layout_centerVertical="true"
+        android:ems="10" />
+    
+    <Button
+        android:id="@+id/adduser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/amount"
+        android:text="@string/dodaj"
+        android:onClick="addUser" />
+
+    <Button
+        android:id="@+id/viewlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/adduser"
+        android:text="@string/zobacz_liste"
+        android:onClick="viewDetails" />
+
+    <Button
+        android:id="@+id/getdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/details_text"
+        android:layout_alignRight="@+id/details_text"
+        android:layout_below="@+id/details_text"
+        android:text="@string/details_button_hint"
+        android:onClick="getDetails" />
+
+    <Button
+        android:id="@+id/deleterow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/getdetails"
+        android:layout_below="@+id/getdetails"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="18dp"
+        android:onClick="deleteRow"
+        android:text="@string/delete_button_hint" />
+
+    <Button
+        android:id="@+id/updateamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/deleterow"
+        android:layout_alignBottom="@+id/deleterow"
+        android:layout_alignLeft="@+id/getdetails"
+        android:layout_marginLeft="16dp"
+        android:onClick="updateAmount"
+        android:text="@string/update_button_hint" />
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DatabaseExample</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="dodaj">Dodaj</string>
+    <string name="zobacz_liste">Zobacz listę</string>
+    <string name="szczegoly">Zobacz szczegóły</string>
+    
+    <string name="ilosc_button_hint">Ilość</string>
+    <string name="update_button_hint">Aktualizuj</string>
+    <string name="delete_button_hint">Usuń</string>
+    <string name="details_text_hint">Zmień nazwę</string>
+    <string name="details_button_hint">Pokaż szczegóły</string>
+    <string name="lista_button_hint">Lista</string>
+    <string name="name_text_hint">Nazwa</string>
+    <string name="amount_text_hint">kwota</string>
+</resources>
+
